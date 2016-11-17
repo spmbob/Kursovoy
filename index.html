@@ -104,6 +104,7 @@
                                 <div class="toggle-content text-center" id="tab3">
                                     <h3>Дополнительная информация</h3>
                                     <p>Пока ничего нет</p>
+									
                                 </div>
                             </div> 
                         </div> 
@@ -211,8 +212,6 @@
                                     <h3>BMW</h3>
                         
 								  <SCRIPT language=JavaScript>
-<!-- hide
-
 var 
 scrtxt = "Áåãóùàÿ ñòðîêà" ; 
 
@@ -253,12 +252,11 @@ function scroll() {
 <BODY bgColor=white onload=scroll()>
 <SCRIPT language=JavaScript>
 
-<!--Íà÷àëî ñöåíàðèÿ
 
 var res="111111"
 
 function check_me()
-<!--âìåñòî "111111" íóæíî âñòàâèòü ïîñëåäîâàòåëüíîñòü ïðàâèëüíûõ îòâåòîâ
+
 {
 	var count=0
 	with(document.test)
@@ -275,18 +273,17 @@ if (!Q1[0].checked&&!Q1[1].checked&&!Q1[2].checked&&!Q1[3].checked)
 {count+=1};
 		if (!Q5[0].checked&&!Q5[1].checked&&!Q5[2].checked&&!Q5[3].checked) 
 {count+=1};
-		if (!Q6[0].checked&&!Q6[1].checked&&!Q6[2].checked&&!Q6[3].checked)  <!--ñêîïèðóéòå ýòó ñòðîêó è âñòàâüòå íèæå íåîáõîäèìîå êîëè÷åñòâî ðàç( âçâèñèìîñòè îò êîëè÷åñòâà âîïðîñîâ), èçìåíèâ Q6 íà Q7, Q8 è ò.ä åñëè äîáàâëÿåòå êîëè÷åñòâî âîïðîñîâ
-
+		if (!Q6[0].checked&&!Q6[1].checked&&!Q6[2].checked&&!Q6[3].checked) 
 {count+=1};
-		if (count>0) <!-- Âû÷èñëåíèå è ïðîâåðêà âñå ëè çàäàíèÿ âûïîëíåíû -->
-{alert("Выберите подходящие путкты.")
+		if (count>0) 
+{alert("Выберите подходящие пункты.")
 } 
 		else answer()
 	}
 }
 
 function control(k,f1,f2,f3,f4,f5,f6)
- <!-- äîáàâüòå ïåðåìåííûå f7, f8,... â çàâèñèìîñòè îò êîëè÷åñòâà âîïðîñîâ
+ 
 {
 	
 if (k==1&&f1.checked) return true;
@@ -300,7 +297,7 @@ if (k==4&&f4.checked) return true;
 if (k==5&&f5.checked) return true;
 	
 if (k==6&&f6.checked) return true;
-<!--ñêîïèðóéòå ýòó ñòðîêó è âñòàâüòå íèæå íåîáõîäèìîå êîëè÷åñòâî ðàç( âçâèñèìîñòè îò êîëè÷åñòâà âîïðîñîâ), èçìåíèâ 6 íà 7, 8 è ò.ä åñëè äîáàâëÿåòå êîëè÷åñòâî âîïðîñîâ	
+
 
 return false;
 }
@@ -323,8 +320,7 @@ answ+=control(res.charAt(3),test.Q4[0],test.Q4[1],test.Q4[2],test.Q4[3])?"1":"0"
 answ+=control(res.charAt(4),test.Q5[0],test.Q5[1],test.Q5[2],test.Q5[3])?"1":"0"
 		
 answ+=control(res.charAt(5),test.Q6[0],test.Q6[1],test.Q6[2],test.Q6[3])?"1":"0"
-<!--ñêîïèðóéòå ýòó ñòðîêó è âñòàâüòå íèæå íåîáõîäèìîå êîëè÷åñòâî ðàç( âçâèñèìîñòè îò êîëè÷åñòâà âîïðîñîâ), èçìåíèâ 5 íà 6, 7 è ò.ä åñëè äîáàâëÿåòå êîëè÷åñòâî âîïðîñîâ		
-<!--Àíàëèç ðåçóëüòàòîâ -->		
+		
 showResult();
 	}
 }
@@ -338,17 +334,17 @@ for (i=0;i<answ.length;i++) {nok+=answ.charAt(i)=="1"?1:0;}
                   
 if(nok<3) s='"бизнес класс"';
                   
-if(nok==3) s='"средний класс такие модели как Bmw 5';
+if(nok==3) s='"средний класс такие модели как Bmw x1 ';
 	
-if(nok>3 && nok<4) s='"так же вам подходят такие модели как Bmw 5, BMW i8,BMW e39"';
+if(nok>3 && nok<4) s='"так же вам подходят такие модели как Bmw 7, BMW i8 ,BMW e39"';
 	
-if(nok==4) s='"бизнес класс пример BMW 7"';
+if(nok==4) s='"бизнес класс пример BMW 5"';
 	
 if(nok>4 && nok<6) s='"средний класс пример BMW e65"';
 	
-if(nok==6) s='"белее бюджетные с примерной мощность двигателя 1.8(пример bmw 3 в новом кузове)"';
+if(nok==6) s='"белее бюджетные с примерной мощность двигателя 1.8(например такие как bmw 3 серии )"';
 	document.test.s1.
-value="Вам подходит несколько моделей марки BMW "+nok+". С 2005 года выпуска "+s+". Если возле характеристик присутствует данный знак,то они часто выбираемые (+). Менее популярны (-).";
+value="Вам подходит несколько моделей марки BMW "+nok+". С 2012 года выпуска "+s+". Спасибо большое что воспользовались данным сайтом!";
 	
 
 
@@ -357,52 +353,52 @@ value="Вам подходит несколько моделей марки BMW 
 </SCRIPT>
 
 <FORM name=test>
-<CENTER><FONT face=Arial,Helvetica,sans-serif color=#000099>
+<CENTER><FONT face=Arial,Helvetica,sans-serif color=black>
 <H3>Выбор модели автомобиля марки BMW </H3></CENTER>
-<IMG src=" еее.jpg "/><BR>
+<IMG src=" ггг.png "/><BR>
 <OL>
   
 <LI>
-  <H4><INPUT size=1 name=T1> Какой объём двигателя вам больше всего подходит </H4>
-<INPUT type=radio name=Q1> 1.6 <BR>
-<INPUT type=radio name=Q1> 1.8 <BR>
-<INPUT type=radio name=Q1> 2.0 <BR>
-<INPUT type=radio name=Q1> от 2.2 и более <BR><BR>
+  <H4> Какой объём двигателя вам больше всего подходит </H4>
+<a><INPUT type=radio name=Q1> 1.6 <BR> </a>
+<a><INPUT type=radio name=Q1> 1.8 <BR> </a>
+<a><INPUT type=radio name=Q1> 2.0 <BR> </a>
+<a><INPUT type=radio name=Q1> от 2.2 и более <BR><BR> </a>
 
 <LI>
-  <H4><INPUT size=1 name=T2> Тип кузова </H4>
-<INPUT type=radio name=Q2> купе <BR>
-<INPUT type=radio name=Q2> сидан  <BR>
-<INPUT type=radio name=Q2> универсал  <BR>
-<INPUT type=radio name=Q2> хэтчбэк <BR><BR>
+  <H4> Тип кузова </H4>
+<a><INPUT type=radio name=Q2> купе <BR> </a>
+<a><INPUT type=radio name=Q2> сидан  <BR> </a>
+<a><INPUT type=radio name=Q2> универсал  <BR> </a>
+<a><INPUT type=radio name=Q2> хэтчбэк <BR><BR> </a>
 
 <LI>
-  <H4><INPUT size=1 name=T3> Дорожный просвет </H4>
-<INPUT type=radio name=Q3> 10 <BR>
-<INPUT type=radio name=Q3> 15 <BR>
-<INPUT type=radio name=Q3> 20 <BR>
-<INPUT type=radio name=Q3> 25 <BR><BR>
+  <H4> Дорожный просвет </H4>
+<a><INPUT type=radio name=Q3> 10 <BR> </a>
+<a><INPUT type=radio name=Q3> 15 <BR> </a>
+<a><INPUT type=radio name=Q3> 20 <BR> </a>
+<a><INPUT type=radio name=Q3> 25 <BR><BR> </a>
 
 <LI>
-  <H4><INPUT size=1 name=T4> Примерный цвет автомобиля </H4>
-<INPUT type=radio name=Q4> Светлый <BR>
-<INPUT type=radio name=Q4> Синий,Тёмно-синий <BR>
-<INPUT type=radio name=Q4> Чёрный <BR>
-<INPUT type=radio name=Q4> Яркий <BR><BR>
+  <H4> Примерный цвет автомобиля </H4>
+<a><INPUT type=radio name=Q4> Светлый <BR> </a>
+<a><INPUT type=radio name=Q4> Синий,Тёмно-синий <BR> </a>
+<a><INPUT type=radio name=Q4> Чёрный <BR> </a>
+<a><INPUT type=radio name=Q4> Яркий <BR><BR> </a>
 
 <LI>
-  <H4><INPUT size=1 name=T5> Максимальная скорость </H4>
-<INPUT type=radio name=Q5> 120 <BR>
-<INPUT type=radio name=Q5> 160 <BR>
-<INPUT type=radio name=Q5> 200 <BR>
-<INPUT type=radio name=Q5> свыше 220 <BR><BR>
+  <H4> Максимальная скорость </H4>
+<a><INPUT type=radio name=Q5> 120 <BR> </a>
+<a><INPUT type=radio name=Q5> 160 <BR> </a>
+<a><INPUT type=radio name=Q5> 200 <BR> </a>
+<a><INPUT type=radio name=Q5> свыше 220 <BR><BR> </a>
 
 <LI>
-  <H4><INPUT size=1 name=T6> Цена </H4>
-<INPUT type=radio name=Q6> до 300000 <BR>
-<INPUT type=radio name=Q6> от300-500 <BR>
-<INPUT type=radio name=Q6> от500-1000000 <BR>
-<INPUT type=radio name=Q6> и выше <BR>
+  <H4> Цена </H4>
+<a><INPUT type=radio name=Q6> до 300000 <BR> </a>
+<a><INPUT type=radio name=Q6> от300-500 <BR> </a>
+<a><INPUT type=radio name=Q6> от500-1000000 <BR> </a>
+<a><INPUT type=radio name=Q6> и выше <BR> </a>
 
 </LI></OL><BR>
 <CENTER>
@@ -418,7 +414,7 @@ type=button value="Показать результат">&nbsp;&nbsp;&nbsp;&nbsp;
 
                                 <div class="toggle-content text-center" id="tab5">
                                     <h3>Ford</h3>
-                                
+                                <IMG src=" шшш.jpg "/>
                             <a href="ford.html">  <img src="knopka.png"> </a>
                                     <p>Авто марки Ford.</p>
 
@@ -427,7 +423,7 @@ type=button value="Показать результат">&nbsp;&nbsp;&nbsp;&nbsp;
 
                                 <div class="toggle-content text-center" id="tab6">
                                     <h3>Nissan</h3>
-                                    
+                                    <IMG src=" ннн.jpg "/>
                             <a href="nissan.html">  <img src="knopka.png"> </a>
                                     <p>Авто марки Nissan</p>
                                     

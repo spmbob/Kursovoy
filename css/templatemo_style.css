@@ -380,6 +380,7 @@ h6 {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background-clip: padding-box;
+	
   /* stops bg color from leaking outside the border: */;
 }
 
